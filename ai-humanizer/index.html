@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lynote AI Humanizer — Trust Strip Preview</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="humanizer.css"></head>
+<body>
+<aside class="rail" aria-label="Tool navigation">
+<a class="rail-brand-link" href="../index.html" aria-label="Homepage design"><img class="rail-brand" src="../assets/lynote.png" alt="Lynote"></a>
+<a href="../index.html" aria-label="Home" title="Home"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v11h-6v-7H9v7H3Z"/></svg></a>
+<a class="selected" href="https://lynote.ai/ai-humanizer" aria-label="AI Humanizer" aria-current="page" title="AI Humanizer"><svg viewBox="0 0 24 24"><path d="M5 4h14v14H9l-4 3Z"/><path d="m8 14 3-7 3 7M9 12h4M17 7v7"/></svg></a>
+<a href="https://lynote.ai/ai-detector" aria-label="AI Detector" title="AI Detector"><svg viewBox="0 0 24 24"><path d="M19 11V4H4v15h7"/><circle cx="14" cy="13" r="4"/><path d="m17 16 4 5"/></svg></a>
+<a href="https://lynote.ai/ai-image-detector" aria-label="AI Image Detector" title="AI Image Detector"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="9" cy="9" r="1.5"/><path d="m5 18 5-5 3 3 4-5 3 4"/></svg></a>
+<a href="https://lynote.ai/youtube-transcript" aria-label="YouTube Transcript" title="YouTube Transcript"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="m10 7 5 3-5 3ZM7 20h10"/></svg></a>
+<a href="https://lynote.ai/youtube-summary" aria-label="Video Summarizer" title="Video Summarizer"><svg viewBox="0 0 24 24"><path d="M4 3h12v18H4ZM8 7h4M8 11h4M17 8l5 4-5 4"/></svg></a>
+<a href="https://lynote.ai/ai-note-generator" aria-label="AI Notes Generator" title="AI Notes Generator"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="15" height="18" rx="2"/><path d="M3 7h4M3 12h4M3 17h4M10 7h6M10 11h6M10 15h4"/></svg></a>
+<a href="https://lynote.ai/document-translator" aria-label="Document Translator" title="Document Translator"><svg viewBox="0 0 24 24"><path d="M3 5h11M8 3v2M5 8l7 8M12 5c-1 6-3 9-8 12M14 21l4-11 4 11M15 18h6"/></svg></a>
+<a class="rail-bottom" href="https://lynote.ai/" aria-label="Browse All Tools" title="Browse All Tools"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></a>
+</aside>
+<main class="humanizer-main">
+<section class="humanizer-hero" aria-labelledby="humanizer-title"><div class="humanizer-inner">
+<header class="humanizer-heading"><h1 id="humanizer-title">Free AI Humanizer - Humanize AI Text with 100% High Quality</h1><p>Paste or upload AI-generated text from ChatGPT, Claude, Gemini, or any AI writer. Humanize AI text online for free and get natural, human-like writing in seconds — no sign-up required.</p></header>
+<nav class="mode-switch" aria-label="Choose writing tool"><a href="#content" class="active" aria-current="page"><svg viewBox="0 0 24 24"><path d="M5 4h14v14H9l-4 3ZM9 8h6M9 12h6"/></svg>AI Humanizer</a><a href="https://lynote.ai/ai-detector"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg>AI Detector</a></nav>
+<div class="settings-bar"><label class="setting">Readability <select aria-label="Readability"><option>Normal</option><option>High School</option><option>University</option><option>PhD</option></select></label><label class="setting">Purpose <select aria-label="Purpose"><option>General</option><option>Essay</option><option>Email</option><option>Blog</option><option>Report</option></select></label><div class="intensity" role="group" aria-label="Rewriting intensity"><button class="active" aria-pressed="true">Simple</button><button aria-pressed="false">Standard</button><button aria-pressed="false">Enhanced</button></div></div>
+<div class="workbench">
+<section class="pane input-pane"><h2><label for="content">Content</label></h2><div class="input-body"><textarea id="content" placeholder="Paste your AI-generated text here. (Minimum 60 words)"></textarea>
+<div class="empty-actions"><button type="button" id="paste"><span class="action-icon"><svg viewBox="0 0 24 24"><rect x="7" y="6" width="12" height="15" rx="2"/><path d="M15 3H5v15M10 10h6M10 14h6M10 18h4"/></svg></span>Paste Text<small>⌘V or click</small></button><button type="button" id="upload"><span class="action-icon"><svg viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 14v7h16v-7"/></svg></span>Upload Document<small>TXT · design preview</small></button><input type="file" id="upload-file" accept=".txt,text/plain" hidden></div>
+<div class="examples"><span>Try Example:</span><button type="button" data-example="mixed">Human + AI</button><button type="button" data-example="claude">Claude</button><button type="button" data-example="chatgpt">ChatGPT</button></div></div>
+<div class="pane-footer"><span id="count">0 words</span><a class="scan-link" href="https://lynote.ai/ai-detector">⌕ &nbsp; Scan for AI</a><a class="humanize-link" href="https://lynote.ai/ai-humanizer" target="_blank" rel="noopener noreferrer" title="Open the live tool to humanize your text">Humanize Now</a></div></section>
+<section class="pane result-pane"><h2>Result</h2><div class="result-body"><div class="result-illustration" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="12" y="9" width="36" height="48" rx="6" fill="#d9cefc" transform="rotate(-10 30 32)"/><rect x="21" y="7" width="34" height="47" rx="5" fill="white" stroke="#e8e0ff" transform="rotate(8 38 31)"/><path d="m29 21 17 2m-18 5 16 2m-17 5 13 2m-14 5 9 1" stroke="#e3dbff" stroke-width="3" stroke-linecap="round"/><circle cx="52" cy="11" r="9" fill="#986eff"/><path d="m52 6 1.4 3.6L57 11l-3.6 1.4L52 16l-1.4-3.6L47 11l3.6-1.4Z" fill="white"/></svg></div><p>Your humanized result will be ready here.<br>To begin, paste your AI-generated text in the left box.</p></div><div class="detector-preview"><h3>Instant AI Detection Result <span>Awaiting result</span></h3><div class="detector-brands"><span>GPTZero</span><span>Brandwell</span><span>Winston AI</span><span>Sapling</span><span>Crossplag</span><span>Copyleaks</span><span>Writer</span><span>ZeroGPT</span><span>Scribbr</span><span>Turnitin</span></div></div><div class="pane-footer"><span>0 words</span></div></section>
+</div><p class="upload-message" id="input-message" role="status"></p>
+<!-- Reuses the homepage component, replacing the standalone statistics block in this preview. -->
+      <section class="trust-strip wrap" aria-label="Lynote ratings, recognition and media coverage">
+        <div class="proof-row">
+          <div class="marquee proof-marquee" tabindex="0" aria-label="Ratings and recognition. Focus or hover to pause scrolling.">
+            <div class="track">
+              <div class="group proof-group">
+                <div class="proof-item laurel-message"><img src="../assets/laurel.svg" alt="" width="24" height="46"><strong>Better Writing.<br><span>More Confidence.</span></strong><img class="laurel-right" src="../assets/laurel.svg" alt="" width="24" height="46"></div>
+                <a class="proof-item badge-item" href="https://www.producthunt.com/products/lynote-ai" target="_blank" rel="noopener noreferrer"><img src="../assets/product-hunt.svg" width="250" height="54" alt="Find Lynote on Product Hunt"></a>
+                <div class="proof-item rating"><span class="rating-star" aria-hidden="true">★</span><div><div class="stat"><strong>4.9</strong><span>/ 5</span></div><span class="caption">Average user rating</span></div></div>
+                <div class="proof-item users"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="12" cy="10" r="4"/><path d="M4 26v-3a8 8 0 0 1 16 0v3M22 6a4 4 0 0 1 0 8M25 18a7 7 0 0 1 4 6v2"/></svg><div><div class="stat"><strong>1M+</strong> <span class="users-word">users</span></div><span class="caption">Writing with confidence</span></div></div>
+                <a class="proof-item badge-item" href="https://trendshift.io/repositories/35405" target="_blank" rel="noopener noreferrer" title="Python daily ranking · September 15, 2026"><img src="../assets/trendshift-python.svg" width="250" height="55" alt="Trendshift: #3 Python Repository of the Day"></a>
+                <a class="proof-item badge-item" href="https://trendshift.io/repositories/35405" target="_blank" rel="noopener noreferrer" title="All-language daily ranking · September 15, 2026"><img src="../assets/trendshift-all.svg" width="250" height="55" alt="Trendshift: #8 Repository of the Day across all languages"></a>
+              </div>
+            </div>
+          </div>
+          <button class="motion-toggle" type="button" aria-label="Pause both scrolling rows" aria-pressed="false" title="Pause scrolling"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10"/></svg></button>
+        </div>
+        <div class="media-row">
+          <span class="row-label">FEATURED IN</span>
+          <div class="marquee media-marquee" tabindex="0" aria-label="Featured media logos. Focus or hover to pause scrolling.">
+            <div class="track"><div class="group media-group">
+              <img src="../assets/media-1.png" width="144" height="48" alt="Basic Tutorials">
+              <img src="../assets/media-2.png" width="144" height="48" alt="Android User">
+              <img src="../assets/media-3.png" width="144" height="48" alt="MetaPress">
+              <img src="../assets/media-4.png" width="144" height="48" alt="PlainEnglish.io">
+              <img src="../assets/media-5.png" width="144" height="48" alt="The AI Journal">
+              <img src="../assets/media-6.png" width="144" height="48" alt="Magazine">
+              <img src="../assets/media-7.png" width="144" height="48" alt="Geeky Gadgets">
+              <img src="../assets/media-8.png" width="144" height="48" alt="TuttoTek">
+              <img src="../assets/media-9.png" width="144" height="48" alt="Redmond Pie">
+              <img src="../assets/media-10.png" width="144" height="48" alt="iLounge">
+              <img src="../assets/media-11.png" width="144" height="48" alt="Business Matters">
+            </div></div>
+          </div>
+        </div>
+      </section>
+</div></section>
+<section class="humanizer-following"><h2>What Is an AI Humanizer?</h2><p>An AI humanizer helps turn AI-generated drafts into more natural writing. Refine the phrasing, review the result, and keep your own voice at the center.</p></section>
+<footer class="preview-note">Design preview · The Humanize Now button opens the <a href="https://lynote.ai/ai-humanizer">live tool</a>. No text is submitted from this preview.</footer>
+</main><script src="humanizer.js"></script>
+</body></html>
