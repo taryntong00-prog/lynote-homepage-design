@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 48" fill="none">
+  <defs><linearGradient id="leaf" x1="15" y1="2" x2="8" y2="47" gradientUnits="userSpaceOnUse"><stop stop-color="#598de9"/><stop offset="1" stop-color="#9b67df"/></linearGradient></defs>
+  <g fill="url(#leaf)">
+    <path d="M18 2C13 3 10 6 12 11c5-1 7-4 6-9Z"/>
+    <path d="M7 8c-3 4-2 8 2 11 3-4 2-8-2-11Z"/>
+    <path d="M19 11c-5-1-9 2-10 7 5 1 9-2 10-7Z"/>
+    <path d="M2 17c-1 5 1 9 6 10 1-5-1-9-6-10Z"/>
+    <path d="M16 21c-5-1-9 1-10 6 5 2 9-1 10-6Z"/>
+    <path d="M1 28c0 5 3 8 8 8 0-5-3-8-8-8Z"/>
+    <path d="M16 29c-5 0-8 3-8 8 5 0 8-3 8-8Z"/>
+    <path d="M5 38c2 5 6 6 11 4-2-4-6-6-11-4Z"/>
+    <path d="M19 36c-5 2-6 5-4 9 4-2 6-5 4-9Z"/>
+  </g>
+  <path d="M15 7C3 20 4 36 20 46" stroke="url(#leaf)" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
