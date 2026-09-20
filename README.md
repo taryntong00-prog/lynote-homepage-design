@@ -6,6 +6,8 @@
 
 在线预览：https://taryntong00-prog.github.io/lynote-homepage-design/single-row.html
 
+Humanizer 同步单排版：https://taryntong00-prog.github.io/lynote-homepage-design/ai-humanizer/single-row.html 。背书顺序、Python #3 徽章与独立白底媒体条和最新首页一致；原 Humanizer 双排版继续保留。
+
 ## AI Humanizer 适配预览
 
 打开 `ai-humanizer/index.html` 查看背书横条在 Humanizer 页的效果。保留工具优先的侧栏、输入和结果双栏布局；横条位于编辑器正下方，与工具区共享背景，在本设计稿中替代原有三项大数字统计区。复用首页 styles.css、官方徽章与媒体素材，桌面端高约 120px，手机约 114px。
