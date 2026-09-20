@@ -1,0 +1,29 @@
+/* Alternative only. The original two-row pages and shared styling are unchanged. */
+.single-proof{padding:6px 0 12px}
+.single-proof-scroll{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-overflow-scrolling:touch;border-radius:4px}
+.single-proof-scroll::-webkit-scrollbar{display:none}
+.single-proof-scroll:focus-visible{outline:2px solid #865eff;outline-offset:3px}
+.single-proof-items{display:flex;align-items:center;justify-content:center;gap:36px;min-height:64px;width:max-content;min-width:100%;padding-inline:12px}
+.single-proof .proof-item{flex:none}
+.single-proof .rating{padding:0 30px 0 0;gap:10px;border-right:1px solid #dfdce9}
+.single-proof .rating-star{font-size:25px;color:#d8ab50}
+.single-proof .stat strong{font-size:22px;font-weight:750}
+.single-proof .users{padding-right:30px;gap:10px;border-right:1px solid #dfdce9}
+.single-proof .users svg{width:25px;height:25px;stroke:#9488b3}
+.single-proof .stat .users-word{font-size:14px;font-weight:500}
+.single-proof .caption{font-size:10px;color:#87818f;margin-top:2px}
+.single-proof .badge-item img{width:210px;max-height:47px}
+.humanizer-hero .single-proof{width:100%;margin:16px 0 0;padding:0 0 4px}
+.design-note a{color:#8065ab;text-decoration:underline;text-underline-offset:3px}
+/* Homepage only: quiet white transition below the lavender hero. */
+.media-transition{background:#fff}
+.media-transition-inner{min-height:84px;display:flex;align-items:center;gap:28px}
+.media-transition-marquee{flex:1}
+.media-transition-group{gap:40px;padding-right:40px;height:84px}
+.media-transition-group img{width:144px;height:40px;object-fit:contain;filter:grayscale(1);opacity:.62}
+.media-transition .track{animation-duration:90s}
+.media-transition.paused .track{animation-play-state:paused}
+.media-transition-toggle{border-color:#eeedf2;background:#fff}
+@media(max-width:740px){.media-transition-inner{min-height:76px;gap:12px}.media-transition-group{height:76px;gap:26px;padding-right:26px}.media-transition-group img{width:116px;height:36px}}
+@media(max-width:1100px){.single-proof-items{gap:24px}.single-proof .rating,.single-proof .users{padding-right:24px}.single-proof .badge-item img{width:195px}}
+@media(max-width:740px){.single-proof{padding-top:0;padding-bottom:8px}.single-proof-items{justify-content:flex-start;gap:24px;min-height:60px;padding-inline:6px}.single-proof .rating,.single-proof .users{padding-right:24px}.single-proof .badge-item img{width:195px}.humanizer-hero .single-proof{margin-top:12px}}

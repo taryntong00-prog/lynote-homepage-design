@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lynote — Homepage Single-Row Comparison</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="single-row.css">
+</head>
+<body>
+  <header class="site-header wrap">
+    <a href="https://lynote.ai/" aria-label="Lynote home"><img class="brand" src="assets/lynote.png" alt="Lynote"></a>
+    <nav aria-label="Main navigation"><a href="https://lynote.ai/ai-humanizer">AI Humanizer</a><a href="https://lynote.ai/ai-detector">AI Detector</a><a href="https://lynote.ai/">Tools <span>⌄</span></a></nav>
+    <a class="header-cta" href="https://lynote.ai/ai-humanizer">Get Started <span>↗</span></a>
+  </header>
+  <main>
+    <div class="hero-area">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Lynote Makes AI Text Sound Human</h1>
+          <p>Turn AI drafts into natural writing, then check for AI signals—all in one place. Keep your voice. Share with confidence.</p>
+          <a class="primary" href="https://lynote.ai/ai-humanizer">Get Started For Free <span>↗</span></a>
+          <ul class="features"><li>Layered AI Humanizer</li><li>Multi-Model AI Detector</li><li>Meaning-Preserving Engine</li></ul>
+        </div>
+        <div class="workspace" aria-label="Product interface preview">
+          <div class="tabs" role="group" aria-label="Preview tool mode"><button type="button" class="active" data-mode="humanizer" aria-pressed="true">AI Humanizer</button><button type="button" data-mode="detector" aria-pressed="false">AI Detector</button></div>
+          <div class="editor"><label for="draft">INPUT AI DRAFT</label><textarea id="draft" placeholder="Paste your AI draft. Make it sound naturally like you."></textarea><div class="models"><span>ChatGPT</span><span>Claude</span><span>Grok</span><span>Gemini</span><span>GPT-5</span><span>DeepSeek</span><span>LLaMA</span></div></div>
+          <div class="editor-footer"><span id="word-count">0 words</span><button class="sample" type="button">Try a Sample</button><a class="primary compact" id="tool-link" href="https://lynote.ai/ai-humanizer">Humanize for Free</a></div>
+        </div>
+      </section>
+
+      <!-- Static first-screen proof; media coverage lives outside the hero. -->
+<section class="single-proof wrap" aria-label="Lynote ratings and recognition"><div class="single-proof-scroll" tabindex="0" aria-label="Ratings, users and recognition; scroll horizontally on small screens"><div class="single-proof-items">
+                <div class="proof-item users"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="12" cy="10" r="4"/><path d="M4 26v-3a8 8 0 0 1 16 0v3M22 6a4 4 0 0 1 0 8M25 18a7 7 0 0 1 4 6v2"/></svg><div><div class="stat"><strong>1M+</strong> <span class="users-word">users</span></div><span class="caption">Writing with confidence</span></div></div>
+                <div class="proof-item rating"><span class="rating-star" aria-hidden="true">★</span><div><div class="stat"><strong>4.9</strong><span>/ 5</span></div><span class="caption">Average user rating</span></div></div>
+                <a class="proof-item badge-item" href="https://www.producthunt.com/products/lynote-ai" target="_blank" rel="noopener noreferrer"><img src="assets/product-hunt.svg" width="250" height="54" alt="Find Lynote on Product Hunt"></a>
+                <a class="proof-item badge-item" href="https://trendshift.io/repositories/35405" target="_blank" rel="noopener noreferrer" title="Python daily ranking · September 15, 2026"><img src="assets/trendshift-python.svg" width="250" height="55" alt="Trendshift: #3 Python Repository of the Day"></a>
+</div></div></section>
+    </div>
+    <section class="media-transition" aria-label="Featured media coverage">
+      <div class="media-transition-inner wrap">
+        <span class="row-label">FEATURED IN</span>
+        <div class="marquee media-transition-marquee" tabindex="0" aria-label="Media logos. Hover or focus to pause; scroll manually when reduced motion is enabled.">
+          <div class="track"><div class="group media-transition-group">
+            <img src="assets/media-10.png" width="144" height="48" alt="iLounge">
+            <img src="assets/media-4.png" width="144" height="48" alt="PlainEnglish.io">
+            <img src="assets/media-5.png" width="144" height="48" alt="The AI Journal">
+            <img src="assets/media-3.png" width="144" height="48" alt="MetaPress">
+            <img src="assets/media-7.png" width="144" height="48" alt="Geeky Gadgets">
+            <img src="assets/media-11.png" width="144" height="48" alt="Business Matters">
+            <img src="assets/media-1.png" width="144" height="48" alt="Basic Tutorials">
+            <img src="assets/media-2.png" width="144" height="48" alt="Android User">
+            <img src="assets/media-8.png" width="144" height="48" alt="TuttoTek">
+            <img src="assets/media-9.png" width="144" height="48" alt="Redmond Pie">
+            <img src="assets/media-6.png" width="144" height="48" alt="Magazine">
+          </div></div>
+        </div>
+        <button class="motion-toggle media-transition-toggle" type="button" aria-label="Pause media logos" aria-pressed="false" title="Pause media logos"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10"/></svg></button>
+      </div>
+    </section>
+  </main>
+  <footer class="design-note">Single-row comparison · <a href="index.html">View the original two-row design ↗</a></footer>
+  <script src="single-row.js"></script>
+</body>
+</html>

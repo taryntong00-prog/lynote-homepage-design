@@ -1,5 +1,11 @@
 # Lynote 首页双排信任横条设计稿
 
+## 最新交付：单排首页（2026-09-20）
+
+请打开 `single-row.html` 查看最新版本，开发说明见 `DEVELOPER-HANDOFF.md`。首屏顺序为 1M+ users、4.9 / 5、Product Hunt、Trendshift Python #3；灰色媒体 Logo 位于首屏外的独立白底横条。原 `index.html` 双排版保留用于对比，下面的双排说明仅描述旧版。
+
+在线预览：https://taryntong00-prog.github.io/lynote-homepage-design/single-row.html
+
 ## AI Humanizer 适配预览
 
 打开 `ai-humanizer/index.html` 查看背书横条在 Humanizer 页的效果。保留工具优先的侧栏、输入和结果双栏布局；横条位于编辑器正下方，与工具区共享背景，在本设计稿中替代原有三项大数字统计区。复用首页 styles.css、官方徽章与媒体素材，桌面端高约 120px，手机约 114px。
